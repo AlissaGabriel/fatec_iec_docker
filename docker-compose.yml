@@ -2,6 +2,7 @@ version: '3.8'
 
 services:
   php:
+    container_name: meu_servidor_php
     build:
       context: .
       dockerfile: Dockerfile
@@ -11,7 +12,7 @@ services:
       - mysql
 
   mysql:
-    container_name: meu_servidor_mysql_2
+    container_name: meu_servidor_mysql
     image: mysql:8.0
     environment:
       MYSQL_ROOT_PASSWORD: root
