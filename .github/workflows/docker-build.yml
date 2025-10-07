@@ -3,7 +3,7 @@ name: Build and Push Docker Image
 on:
   push:
     branches:
-      - main   # Executa apenas quando fizer push na branch main
+      - main   #Executa apenas quando fizer push na branch main
   workflow_dispatch: # Permite rodar manualmente
 
 jobs:
