@@ -1,11 +1,11 @@
-from php:8.4-apache
+FROM php:8.4-apache
  
 RUN docker-php-ext-install mysqli
 RUN docker-php-ext-install pdo
 RUN docker-php-ext-install pdo_mysql
  
 #Habilitando a extensão Rewrite do Apache para trabalhar com rotas.
-run a2enmod rewrite
+RUN a2enmod rewrite
  
 # O caminho fixo é: /var/www/html/
 # O primeiro COPY copia a pasta com os arqiuvos do projeto.
